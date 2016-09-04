@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/text_view_height"
+	android:descendantFocusability="blocksDescendants">
+
+	<TextView
+		android:id="@+id/t1"
+		android:layout_width="wrap_content"
+		android:layout_height="@dimen/text_view_height"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="10dp"
+		android:gravity="center_vertical|left"
+		android:lines="2"
+		android:textSize="14sp"/>
+
+	<com.kyleduo.switchbutton.SwitchButton
+		android:id="@+id/sw_btn"
+		style="@style/SwitchButtonStyle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:layout_gravity="right"
+		android:textColor="#ffffff"
+		android:textSize="15.15sp"
+		app:kswBackMeasureRatio="1.8"
+		app:kswBackRadius="2dp"
+		app:kswTextOff="No"
+		app:kswTextOn="Yes"
+		app:kswThumbDrawable="@drawable/switch_blue"
+		app:kswThumbHeight="25dp"
+		app:kswThumbRadius="2dp"
+		app:kswThumbWidth="25dp"
+		app:kswTintColor="@color/colorPrimary"
+		/>
+</RelativeLayout>

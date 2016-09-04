@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+	<include
+		android:id="@+id/common_actionbar"
+		layout="@layout/include_actionbar"/>
+
+	<Button
+		android:text="完成"
+		style="@style/next_btn_style"
+		android:id="@+id/next"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginBottom="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:visibility="invisible"/>
+
+	<TextView
+		android:id="@+id/eval_score"
+		android:background="@color/white"
+		android:text="score: 0.0"
+		android:textColor="#2383c0"
+		android:textSize="@dimen/textsize"
+		android:gravity="center"
+		android:layout_width="wrap_content"
+		android:layout_height="@dimen/text_view_height"
+		android:layout_alignBottom="@+id/common_actionbar"
+		android:layout_marginBottom="2dp"
+		android:layout_alignParentEnd="true"
+		android:layout_marginRight="5dp"/>
+
+	<ScrollView
+		android:id="@+id/eval_scv1"
+		android:layout_below="@+id/eval_score"
+		android:layout_above="@id/next"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:id="@+id/liner_1"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+		</LinearLayout>
+
+	</ScrollView>
+
+
+</RelativeLayout>

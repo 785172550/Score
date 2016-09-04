@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+
+	<include
+		android:id="@+id/common_actionbar"
+		layout="@layout/include_actionbar"/>
+
+	<RadioGroup
+		android:id="@+id/ra"
+		android:background="@color/slide_color"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="45dp">
+
+		<RadioButton
+			android:id="@+id/radio1"
+			android:layout_weight="1"
+			android:text="左冠优势型"
+			android:textColor="@color/white"
+			android:background="@drawable/radio_btn_selector"
+			android:gravity="center"
+			android:button="@null"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"/>
+
+		<RadioButton
+			android:id="@+id/radio2"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="右冠优势型"
+			android:textColor="@color/white"
+			android:background="@drawable/radio_btn_selector"
+			android:button="@null"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"/>
+	</RadioGroup>
+
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<FrameLayout
+			android:id="@+id/frag_content"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+		</FrameLayout>
+
+
+	</RelativeLayout>
+
+
+</LinearLayout>

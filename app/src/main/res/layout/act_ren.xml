@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+	<include
+		android:id="@+id/common_actionbar"
+		layout="@layout/include_actionbar"/>
+
+	<ProgressBar
+		android:id="@+id/pro"
+		style="?progressBarPadding"
+		android:layout_centerInParent="true"
+		android:layout_width="100dp"
+		android:layout_height="100dp"/>
+
+	<TextView
+		style="@style/texview_style"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="您还未获得后台认证！
+			请保持网络连接"
+		android:id="@+id/textView5"
+		android:textSize="20sp"
+		android:textColor="@color/colorPrimary"
+		android:layout_below="@+id/pro"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="73dp"/>
+
+</RelativeLayout>

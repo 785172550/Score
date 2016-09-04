@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical"
+			  android:background="@color/backgroud_color"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+
+	<include
+		android:id="@+id/common_actionbar"
+		layout="@layout/include_actionbar"/>
+
+	<!--<RelativeLayout
+		android:background="@color/white"
+		android:layout_width="match_parent"
+		android:layout_height="60dp">
+
+		<ImageView
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="10dp"
+			android:src="@drawable/slide_n"
+			android:id="@+id/img_slide"
+			android:layout_width="30dp"
+			android:layout_height="30dp"/>
+
+		<TextView
+			android:textColor="@color/bule_title"
+			android:text="中国冠脉介入指南推荐评分系统"
+			android:textSize="13sp"
+			android:layout_centerInParent="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	</RelativeLayout>-->
+
+	<ImageView
+		android:background="@color/bule_title"
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"/>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<ImageView
+			android:scaleType="centerCrop"
+			android:src="@drawable/background"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+
+		<Button
+			android:background="@drawable/start_test"
+			android:id="@+id/start_btn"
+			android:layout_width="120dp"
+			android:layout_height="40dp"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:layout_marginBottom="105dp"/>
+	</RelativeLayout>
+
+</LinearLayout>

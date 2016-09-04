@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/mytitle"
+		style="@style/texview_style"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textColor="@color/green_title"/>
+
+	<RadioGroup
+		android:id="@+id/rad_group"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/mytitle"
+		android:layout_marginLeft="10dp">
+	</RadioGroup>
+
+</LinearLayout>

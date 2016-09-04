@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			android:background="@color/backgroud_color">
+
+	<!--<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+					android:background="@color/colorPrimaryDark"
+					android:layout_width="match_parent"
+					android:layout_height="60dp">
+
+		<ImageButton
+			android:scaleType="fitCenter"
+			android:id="@+id/left_btn"
+			android:layout_centerVertical="true"
+			android:layout_width="25dp"
+			android:layout_height="25dp"
+			android:background="@android:color/transparent"
+			android:layout_marginLeft="10dp"
+			android:src="@drawable/base_action_bar_back_bg_selector"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="意见反馈"
+			android:layout_centerInParent="true"
+			android:textColor="@color/white"
+			android:textSize="20sp"/>
+
+		<TextView
+			android:id="@+id/rgh_btn"
+			android:text="发送"
+			android:textColor="@color/white"
+			android:textSize="20sp"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="10dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+
+	</RelativeLayout>-->
+
+	<include
+		android:id="@+id/common_actionbar"
+		layout="@layout/include_actionbar"/>
+
+	<EditText
+		android:background="@drawable/edt_shape"
+		android:id="@+id/etv"
+		android:gravity="top"
+		android:hint=" 感谢您的反馈，我们必定认真阅读"
+		android:textSize="@dimen/textsize"
+		android:layout_width="match_parent"
+		android:paddingLeft="5dp"
+		android:layout_height="200dp"/>
+
+	<TextView
+		android:layout_marginTop="30dp"
+		android:layout_gravity="center_horizontal"
+		android:gravity="center"
+		android:textSize="@dimen/textsize"
+		android:text="欢迎大家提出宝贵的意见和建议，一经采纳\n
+		我们将送出精美的礼品一份！"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+
+	<Button
+		android:id="@+id/send"
+		android:layout_marginTop="40dp"
+		android:layout_gravity="center_horizontal"
+		android:background="@drawable/send"
+		android:layout_width="120dp"
+		android:layout_height="40dp"/>
+
+</LinearLayout>

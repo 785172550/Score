@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.sean.score"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile project(':library')
+    compile 'com.kyleduo.switchbutton:library:1.4.1'
+    compile 'com.baoyz.actionsheet:library:1.1.5'
+    compile 'com.android.support:support-v4:23.2.1'
+    compile files('libs/Jama-1.0.3.jar')
+    compile 'com.bigkoo:pickerview:2.0.8'
+    compile files('libs/Volley.jar')
+    compile 'cn.finalteam:galleryfinal:1.4.8.7'
+    compile 'com.bm.photoview:library:1.4.0'
+    compile 'com.github.satyan:sugar:1.4'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile files('libs/CCP_REST_SMS_SDK_JAVA_v2.6.3r.jar')
+    compile 'com.github.zzz40500:android-shapeLoadingView:1.0.3.2'
+    compile 'com.daasuu:BubbleLayout:1.1.1'
+}

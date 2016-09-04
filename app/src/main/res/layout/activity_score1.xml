@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+	>
+
+	<include
+		android:id="@+id/common_actionbar"
+		layout="@layout/include_actionbar"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentStart="true"
+		android:layout_centerVertical="true"
+		android:orientation="horizontal"
+		android:id="@+id/linearLayout3">
+
+		<ImageView
+			android:id="@+id/iv_left"
+			android:layout_weight="1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/left_dom"/>
+
+		<ImageView
+			android:layout_weight="1"
+			android:id="@+id/iv_right"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/right_dom"/>
+	</LinearLayout>
+
+	<TextView
+		style="@style/texview_style"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="左冠优势型"
+		android:id="@+id/textView"
+		android:layout_marginStart="43dp"
+		android:layout_alignTop="@+id/textView3"
+		android:layout_alignParentStart="true"/>
+
+	<TextView
+		style="@style/texview_style"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="右冠优势型"
+		android:id="@+id/textView3"
+		android:layout_above="@+id/linearLayout3"
+		android:layout_alignParentEnd="true"
+		android:layout_marginEnd="35dp"
+		android:layout_marginBottom="28dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="40dp">
+
+	<TextView
+		android:layout_centerVertical="true"
+		style="@style/texview_style"
+		android:textColor="#707070"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Score "
+		android:id="@+id/NersScore"
+		android:layout_marginTop="20dp"
+		android:layout_marginLeft="30dp"
+
+		android:layout_alignParentStart="true"/>
+
+	<TextView
+		android:layout_centerVertical="true"
+		style="@style/texview_style"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text=""
+		android:textColor="@color/green_title"
+		android:id="@+id/NersScore_res"
+		android:layout_marginTop="20dp"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="30dp"/>
+
+	<ImageView
+		android:layout_alignParentBottom="true"
+		android:background="@color/gray_title"
+		android:layout_width="match_parent"
+		android:layout_height="0.3dp"/>
+
+</RelativeLayout>

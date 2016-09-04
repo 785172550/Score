@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="40dp"
+			  android:gravity="center_vertical"
+			  android:orientation="horizontal">
+
+	<!--<ImageView
+		android:layout_width="25dp"
+		android:layout_height="25dp"
+		android:layout_marginLeft="10dp"
+		android:src="@drawable/clock"/>-->
+
+	<TextView
+		android:id="@+id/tv_item"
+		style="@style/texview_style"
+		android:layout_width="wrap_content"
+		android:layout_height="@dimen/text_view_height"/>
+
+</LinearLayout>

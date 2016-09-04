@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="transparent">#00000000</color>
+	<color name="colorPrimary">#4E8DF7</color>
+	<color name="colorPrimaryDark">#4E8DF7</color>
+	<color name="colorAccent">#FF4081</color>
+	<color name="white">#ffffff</color>
+	<color name="stroke_color">#C9C9C9</color>
+	<color name="backgroud_color">#E4E4E4</color>
+	<color name="black">#000000</color>
+
+	<color name="green">#90c31f</color>
+
+	<color name="header_color">#ffffff</color>
+	<color name="header_text">#0c5890</color>
+
+	<color name="next_btn_color">#90c31f</color>
+	
+	<color name="green_title">#90c31f</color>
+	<color name="bule_title">#0d5891</color>
+	<color name="gray_title">#707070 </color>
+
+	<color name="histor_color">#e5e5e5</color>
+	<color name="slide_color">#bfbfbf</color>
+
+	<color name="bubble_color">#eeeeee</color>
+</resources>

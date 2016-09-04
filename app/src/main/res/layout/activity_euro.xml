@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				xmlns:app="http://schemas.android.com/apk/res-auto"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@color/gray_title"
+				android:orientation="vertical">
+
+	<include
+		android:id="@+id/common_actionbar"
+		layout="@layout/include_actionbar"/>
+
+	<RelativeLayout
+		android:background="@color/white"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/rl_calculate"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<Button
+			android:id="@+id/calculate"
+			style="@style/next_btn_style"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:layout_marginBottom="10dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:text="计算"/>
+	</RelativeLayout>
+
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_above="@id/rl_calculate"
+		android:layout_below="@id/common_actionbar">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				style="@style/texview_style"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/text_view_height"
+				android:background="@color/green_title"
+				android:text="患者相关因素(Patient related factors)"
+				android:textColor="@color/white"/>
+
+			<RelativeLayout
+				android:id="@+id/lin1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/white"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/t_Renal"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:layout_marginLeft="10dp"
+					android:background="@null"
+					android:gravity="center_vertical"
+					android:text="肾功能不全(肌酐清除率)"
+					android:textSize="@dimen/textsize"/>
+
+				<ImageView
+					android:id="@+id/img6"
+					android:layout_width="60dp"
+					android:layout_height="30dp"
+					android:layout_marginRight="10dp"
+					android:layout_alignParentEnd="true"
+					android:layout_centerVertical="true"
+					android:src="@drawable/pulldown_green"/>
+			</RelativeLayout>
+
+			<ImageView
+				android:background="@color/gray_title"
+				android:layout_width="match_parent"
+				android:layout_height="0.3dp"/>
+
+			<ListView
+				android:id="@+id/eur_lview"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/white"
+				android:divider="@color/gray_title"
+				android:dividerHeight="0.3dp">
+			</ListView>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/text_view_height"
+				android:background="@color/bule_title"
+				android:gravity="center_vertical"
+				android:paddingLeft="10dp"
+				android:text="心脏相关因素(Cardiac related factors)"
+				android:textColor="@color/white"
+				android:textSize="@dimen/textsize"/>
+
+			<RelativeLayout
+				android:id="@+id/lin2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/marginTop_dimens"
+				android:background="@color/white"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/NYHA"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/text_view_height"
+					android:layout_marginLeft="10dp"
+					android:background="@null"
+					android:gravity="center_vertical"
+					android:text="纽约心脏协会 (NYHA)"
+					android:textSize="@dimen/textsize"/>
+
+				<ImageView
+					android:id="@+id/img1"
+					android:layout_width="60dp"
+					android:layout_height="30dp"
+					android:layout_marginRight="10dp"
+					android:layout_alignParentEnd="true"
+					android:layout_centerVertical="true"
+					android:src="@drawable/pulldown_bule"/>
+
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:id="@+id/rl_1"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginTop="@dimen/marginTop_dimens"
+				android:background="@color/white"
+				android:descendantFocusability="blocksDescendants">
+
+				<TextView
+					android:id="@+id/CSS_class"
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/text_view_height"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="10dp"
+					android:gravity="center_vertical"
+					android:text="CCS心绞痛分级(4级) ★"
+					android:textSize="@dimen/textsize"/>
+
+				<com.kyleduo.switchbutton.SwitchButton
+					android:id="@+id/CSS_class_btn"
+					style="@style/SwitchButtonStyle"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:layout_gravity="right"
+					android:textColor="#ffffff"
+					android:textSize="15sp"
+					app:kswTextOff="No"
+					app:kswTextOn="Yes"
+					app:kswThumbDrawable="@drawable/switch_blue"
+					app:kswThumbHeight="25dp"
+					app:kswThumbWidth="25dp"
+					app:kswTintColor="@color/colorPrimary"
+					app:kswBackRadius="2dp"
+					app:kswThumbRadius="2dp"
+					/>
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:id="@+id/lin3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/marginTop_dimens"
+				android:background="@color/white"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/t_LV"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/text_view_height"
+					android:layout_marginLeft="10dp"
+					android:background="@null"
+					android:gravity="center_vertical"
+					android:text="左心室功能（左室射血分数)"
+					android:textSize="@dimen/textsize"/>
+
+				<ImageView
+					android:id="@+id/img2"
+					android:layout_width="60dp"
+					android:layout_height="30dp"
+					android:layout_alignParentEnd="true"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="10dp"
+					android:src="@drawable/pulldown_bule"/>
+
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:id="@+id/rl_2"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginTop="@dimen/marginTop_dimens"
+				android:background="@color/white"
+				android:descendantFocusability="blocksDescendants">
+
+				<TextView
+					android:id="@+id/t_Recent"
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/text_view_height"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="10dp"
+					android:gravity="center"
+					android:text="近期心肌梗死 ★"
+					android:textSize="@dimen/textsize"/>
+
+				<com.kyleduo.switchbutton.SwitchButton
+					android:id="@+id/Recent_btn"
+					style="@style/SwitchButtonStyle"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:layout_gravity="right"
+					android:textColor="#ffffff"
+					android:textSize="15sp"
+					app:kswTextOff="No"
+					app:kswTextOn="Yes"
+					app:kswThumbDrawable="@drawable/switch_blue"
+					app:kswThumbHeight="25dp"
+					app:kswThumbWidth="25dp"
+					app:kswTintColor="@color/colorPrimary"
+					app:kswBackRadius="2dp"
+					app:kswThumbRadius="2dp"
+					/>
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:id="@+id/lin4"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/marginTop_dimens"
+				android:background="@color/white"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/t_Ph"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/text_view_height"
+					android:layout_marginLeft="10dp"
+					android:background="@null"
+					android:gravity="center_vertical"
+					android:text="肺动脉高压"
+					android:layout_marginRight="10dp"
+					android:textSize="@dimen/textsize"/>
+
+				<ImageView
+					android:id="@+id/img3"
+					android:layout_width="60dp"
+					android:layout_height="30dp"
+					android:layout_marginRight="10dp"
+					android:layout_alignParentEnd="true"
+					android:layout_centerVertical="true"
+					android:src="@drawable/pulldown_bule"/>
+			</RelativeLayout>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/text_view_height"
+				android:paddingLeft="10dp"
+				android:background="@color/gray_title"
+				android:gravity="center_vertical"
+				android:text="手术相关因素(Opreation related factors)"
+				android:textColor="@color/white"
+				android:textSize="@dimen/textsize"/>
+
+			<RelativeLayout
+				android:id="@+id/lin5"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/marginTop_dimens"
+				android:background="@color/white"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/t_Urgency"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/text_view_height"
+					android:layout_marginLeft="10dp"
+					android:background="@null"
+					android:gravity="center_vertical"
+					android:text="紧急手术状态"
+					android:textSize="@dimen/textsize"/>
+
+				<ImageView
+					android:id="@+id/img4"
+					android:layout_width="60dp"
+					android:layout_height="30dp"
+					android:layout_marginRight="10dp"
+					android:layout_alignParentEnd="true"
+					android:layout_centerVertical="true"
+					android:src="@drawable/pulldown_gray"/>
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:id="@+id/lin6"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/marginTop_dimens"
+				android:background="@color/white"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/t_Weight"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/text_view_height"
+					android:layout_marginLeft="10dp"
+					android:background="@null"
+					android:gravity="center_vertical"
+					android:text="心脏手术项权重"
+					android:textSize="@dimen/textsize"/>
+				<ImageView
+					android:id="@+id/img5"
+					android:layout_width="60dp"
+					android:layout_height="30dp"
+					android:layout_marginRight="10dp"
+					android:layout_alignParentEnd="true"
+					android:layout_centerVertical="true"
+					android:src="@drawable/pulldown_gray"/>
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginTop="@dimen/marginTop_dimens"
+				android:background="@color/white">
+
+				<TextView
+					android:id="@+id/t_Surgery"
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/text_view_height"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="10dp"
+					android:gravity="center"
+					android:text="胸主动脉手术"
+					android:textSize="@dimen/textsize"/>
+
+				<com.kyleduo.switchbutton.SwitchButton
+					android:id="@+id/t_Surgery_btn"
+					style="@style/SwitchButtonStyle"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:layout_gravity="right"
+					android:textColor="#ffffff"
+					android:textSize="15sp"
+					app:kswTextOff="No"
+					app:kswTextOn="Yes"
+					app:kswThumbDrawable="@drawable/switch_grey"
+					app:kswThumbHeight="25dp"
+					app:kswThumbWidth="25dp"
+					app:kswTintColor="@color/colorPrimary"
+					app:kswBackRadius="2dp"
+					app:kswThumbRadius="2dp"
+					/>
+			</RelativeLayout>
+
+
+		</LinearLayout>
+	</ScrollView>
+
+</RelativeLayout>

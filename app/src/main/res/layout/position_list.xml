@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+		android:background="@color/backgroud_color">
+
+
+	<LinearLayout
+		android:id="@+id/title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:showDividers="middle"
+		android:background="@color/backgroud_color"
+		>
+
+		<TextView
+			android:gravity="center"
+			android:layout_weight="1"
+			android:id="@+id/tv_name"
+			android:text="病段名"
+			android:textSize="18sp"
+			android:layout_width="0dp"
+			android:layout_height="@dimen/text_view_height"/>
+		<TextView
+			android:gravity="center"
+			android:layout_weight="1"
+			android:id="@+id/tv_3"
+			android:text="血管分级"
+			android:textSize="18sp"
+			android:layout_width="0dp"
+			android:layout_height="@dimen/text_view_height"/>
+		<TextView
+			android:gravity="center"
+			android:layout_weight="1"
+			android:id="@+id/tv_4"
+			android:text="分输"
+			android:textSize="18sp"
+			android:layout_width="0dp"
+			android:layout_height="@dimen/text_view_height"/>
+
+	</LinearLayout>
+
+	<Button
+		android:id="@+id/next_btn"
+		android:text="下一步"
+		android:layout_alignParentBottom="true"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:layout_marginLeft="45dp"
+		android:layout_marginRight="45dp"
+		android:layout_marginBottom="10dp"
+		style="@style/next_btn_style"/>
+
+	<ListView
+		android:id="@+id/mlistview"
+		android:layout_below="@id/title"
+		android:divider="@drawable/divider"
+		android:background="@color/white"
+		android:layout_above="@id/next_btn"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+</RelativeLayout>

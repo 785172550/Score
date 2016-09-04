@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="horizontal"
+			  android:layout_width="match_parent"
+			  android:id="@+id/slide_content"
+			  android:layout_height="80dp">
+
+	<ImageView
+		android:id="@+id/iv_item"
+		android:layout_width="25dp"
+		android:layout_height="25dp"
+		android:layout_marginLeft="20dp"
+		android:layout_gravity="center_vertical"/>
+
+	<TextView
+		android:id="@+id/name_item"
+		android:layout_marginLeft="20dp"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:gravity="center_vertical"
+		android:textSize="@dimen/textsize"
+		android:text="商家地图"/>
+</LinearLayout>

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:background="@color/backgroud_color"
+			  android:orientation="vertical">
+
+	<include
+		android:id="@+id/common_actionbar"
+		layout="@layout/include_actionbar"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/backgroud_color"
+			android:orientation="vertical">
+
+			<RelativeLayout
+				android:id="@+id/report_name"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/text_view_height"
+				android:layout_marginTop="@dimen/marginTop_dimens"
+				android:background="@color/white">
+
+				<TextView
+					style="@style/texview_style"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:text="姓名"/>
+
+				<TextView
+					android:id="@+id/r_name"
+					style="@style/texview_style"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_marginRight="10dp"
+					android:text="无"/>
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:id="@+id/report_gender"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/text_view_height"
+				android:layout_marginTop="@dimen/marginTop_dimens"
+				android:background="@color/white">
+
+				<TextView
+					style="@style/texview_style"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:text="性别"/>
+
+				<TextView
+					android:id="@+id/r_gender"
+					style="@style/texview_style"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_marginRight="10dp"
+					android:text="无"/>
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:id="@+id/report_age"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/text_view_height"
+				android:layout_marginTop="@dimen/marginTop_dimens"
+				android:background="@color/white">
+
+				<TextView
+					style="@style/texview_style"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:text="年龄"/>
+
+				<TextView
+					android:id="@+id/r_age"
+					style="@style/texview_style"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_marginRight="10dp"
+					android:text="无"/>
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:id="@+id/report_num"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/text_view_height"
+				android:layout_marginTop="@dimen/marginTop_dimens"
+				android:background="@color/white">
+
+				<TextView
+					style="@style/texview_style"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:text="住院号"/>
+
+				<TextView
+					android:id="@+id/r_num"
+					style="@style/texview_style"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_marginRight="10dp"
+					android:text="无"/>
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:id="@+id/report_time"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/text_view_height"
+				android:layout_marginTop="@dimen/marginTop_dimens"
+				android:background="@color/white">
+
+				<TextView
+					style="@style/texview_style"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:text="造影时间"/>
+
+				<TextView
+					android:id="@+id/r_time"
+					style="@style/texview_style"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_marginRight="10dp"
+					android:text="无"/>
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:id="@+id/look"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/text_view_height"
+				android:layout_marginTop="@dimen/marginTop_dimens"
+				android:background="@color/white">
+
+				<TextView
+					style="@style/texview_style"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:text="造影图片"/>
+
+
+
+				<TextView
+					android:id="@+id/r_img"
+					style="@style/texview_style"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_marginRight="10dp"
+					android:text="无"/>
+
+				<ImageView
+					android:id="@+id/r_img_icon"
+					android:visibility="invisible"
+					android:layout_toLeftOf="@id/r_img"
+					android:src="@drawable/picture_icon"
+					android:layout_centerVertical="true"
+					android:layout_width="25dp"
+					android:layout_height="25dp"/>
+			</RelativeLayout>
+
+			<TextView
+				style="@style/texview_style"
+				android:textColor="@color/white"
+				android:background="@color/green_title"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/text_view_height"
+				android:text="评测结果"/>
+
+			<RelativeLayout
+				android:id="@+id/report_score1"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/text_view_height"
+				android:layout_marginTop="@dimen/marginTop_dimens"
+				android:background="@color/white">
+
+				<TextView
+					style="@style/texview_style"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:text="Syntax I"/>
+
+				<TextView
+					android:id="@+id/r_score1"
+					style="@style/texview_style"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_marginRight="10dp"
+					android:textColor="@color/green_title"
+					android:text="无"/>
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:id="@+id/report_score2"
+				android:layout_width="match_parent"
+				android:layout_height="90dp"
+				android:layout_marginTop="@dimen/marginTop_dimens"
+				android:background="@color/white">
+
+				<TextView
+					android:id="@+id/textView4"
+					style="@style/texview_style"
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/text_view_height"
+					android:text="Syntax II"/>
+
+				<TextView
+					android:id="@+id/pci"
+					style="@style/small_text"
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/text_view_height"
+					android:layout_alignParentTop="true"
+					android:layout_marginStart="25dp"
+					android:layout_toEndOf="@+id/textView4"
+					android:text="PCI:  "/>
+
+				<TextView
+					android:id="@+id/res_pci"
+					style="@style/small_text"
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/text_view_height"
+					android:layout_marginLeft="15dp"
+					android:layout_toEndOf="@id/pci"
+					android:text="无"
+					android:textColor="@color/green_title"/>
+
+
+
+				<TextView
+					android:id="@+id/res_pci_m"
+					style="@style/small_text"
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/text_view_height"
+					android:layout_alignParentRight="true"
+					android:layout_marginRight="10dp"
+					android:text="无"
+					android:textColor="@color/green_title"/>
+
+				<TextView
+					android:id="@+id/pci_m"
+					style="@style/small_text"
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/text_view_height"
+					android:layout_marginStart="15dp"
+					android:layout_toLeftOf="@id/res_pci_m"
+					android:layout_marginRight="10dp"
+					android:text="4年死亡率:"/>
+
+				<TextView
+					android:id="@+id/CABG"
+					style="@style/small_text"
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/text_view_height"
+					android:layout_alignParentBottom="true"
+					android:layout_alignStart="@+id/pci"
+					android:layout_marginLeft="0dp"
+					android:text="CABG:"/>
+
+				<TextView
+					android:id="@+id/res_CABG"
+					style="@style/small_text"
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/text_view_height"
+					android:layout_below="@id/res_pci"
+					android:layout_marginLeft="15dp"
+					android:layout_toEndOf="@id/pci"
+					android:text="无"
+					android:textColor="@color/green_title"/>
+
+
+
+				<TextView
+					android:id="@+id/res_CABG_m"
+					style="@style/small_text"
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/text_view_height"
+					android:layout_alignStart="@+id/res_pci_m"
+					android:layout_below="@+id/res_pci_m"
+					android:layout_marginLeft="0dp"
+					android:text="无"
+					android:textColor="@color/green_title"/>
+
+				<TextView
+					android:id="@+id/CABG_m"
+					style="@style/small_text"
+					android:layout_marginLeft="0dp"
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/text_view_height"
+					android:layout_alignParentBottom="true"
+					android:layout_alignStart="@id/pci_m"
+					android:layout_below="@+id/pci_m"
+					android:text="4年死亡率:"/>
+			</RelativeLayout>
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/text_view_height"
+				android:background="@color/white">
+
+				<TextView
+					android:id="@+id/rec_jjj"
+					android:layout_marginStart="80dp"
+					style="@style/texview_style"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:textColor="@color/bule_title"
+					android:text="推荐治疗"/>
+
+				<TextView
+					android:layout_marginLeft="10dp"
+					android:layout_toRightOf="@id/rec_jjj"
+					android:id="@+id/r_recom"
+					style="@style/texview_style"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_marginRight="10dp"
+					android:textColor="@color/bule_title"
+					android:text="无"/>
+
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:id="@+id/report_score3"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/text_view_height"
+				android:layout_marginTop="@dimen/marginTop_dimens"
+				android:background="@color/white">
+
+				<TextView
+					style="@style/texview_style"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:text="Euro Score II"/>
+
+				<TextView
+					android:id="@+id/r_score3"
+					style="@style/texview_style"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_marginRight="10dp"
+					android:textColor="@color/green_title"
+					android:text="无"/>
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:id="@+id/report_score4"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/text_view_height"
+				android:layout_marginTop="@dimen/marginTop_dimens"
+				android:background="@color/white">
+
+				<TextView
+					style="@style/texview_style"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:text="Ners Score II"/>
+
+				<TextView
+					android:id="@+id/r_score4"
+					style="@style/texview_style"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_marginRight="10dp"
+					android:textColor="@color/green_title"
+					android:text="无"/>
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:id="@+id/select_me"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/text_view_height"
+				android:layout_marginTop="@dimen/marginTop_dimens"
+				android:background="@color/bule_title">
+
+				<TextView
+					style="@style/texview_style"
+					android:textColor="@color/white"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:text="手术抉择"/>
+
+				<TextView
+					android:id="@+id/r_select"
+					style="@style/texview_style"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_marginRight="10dp"
+					android:textColor="@color/white"
+					android:text="无"/>
+			</RelativeLayout>
+
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

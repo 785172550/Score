@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+
+	<include
+		android:id="@+id/common_actionbar"
+		layout="@layout/include_actionbar"/>
+
+	<SearchView
+		android:id="@+id/searchView"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="10dp"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/transparent"
+		android:queryHint="搜索">
+	</SearchView>
+
+	<LinearLayout
+		android:layout_marginTop="10dp"
+		android:background="@color/green_title"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/text_view_height">
+		<TextView
+			android:gravity="center"
+			android:layout_weight="1"
+			android:text="日期"
+			android:textColor="@color/white"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"/>
+		<TextView
+			android:text="姓名"
+			android:textColor="@color/white"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"/>
+		<TextView
+			android:text="住院号"
+			android:textColor="@color/white"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"/>
+	</LinearLayout>
+
+	<ListView
+		android:id="@+id/search_list"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
+
+</LinearLayout>

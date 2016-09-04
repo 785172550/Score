@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.sean.score.MainActivity">
+
+	<!--<include android:id="@+id/common_header"
+		layout="@layout/header_layout"/>-->
+	<include
+		android:id="@+id/common_actionbar"
+		layout="@layout/include_actionbar"/>
+
+		<LinearLayout
+			android:id="@+id/li_1"
+			android:layout_below="@+id/common_actionbar"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/li_marginTop">
+
+			<ImageView
+				android:layout_weight="1"
+				android:id="@+id/iv_1"
+				android:background="@drawable/syntax1_button"
+				android:layout_width="150dp"
+				android:layout_height="120dp"
+				android:layout_marginLeft="@dimen/button_margin_around"
+				android:layout_marginRight="@dimen/button_margin_around"
+				/>
+
+			<ImageView
+				android:layout_weight="1"
+				android:id="@+id/iv_2"
+				android:background="@drawable/syntax2_button"
+				android:layout_width="150dp"
+				android:layout_height="120dp"
+				android:layout_marginLeft="@dimen/button_margin_around"
+				android:layout_marginRight="@dimen/button_margin_around"
+				/>
+		</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/li_2"
+		android:layout_below="@+id/li_1"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/li_marginTop">
+
+		<ImageView
+			android:layout_weight="1"
+			android:id="@+id/iv_3"
+			android:background="@drawable/euro_button"
+			android:layout_width="150dp"
+			android:layout_height="120dp"
+			android:layout_marginLeft="@dimen/button_margin_around"
+			android:layout_marginRight="@dimen/button_margin_around"
+			/>
+
+		<ImageView
+			android:layout_weight="1"
+			android:id="@+id/iv_4"
+			android:background="@drawable/ners_button"
+			android:layout_width="150dp"
+			android:layout_height="120dp"
+			android:layout_marginLeft="@dimen/button_margin_around"
+			android:layout_marginRight="@dimen/button_margin_around"
+			/>
+	</LinearLayout>
+
+
+	<LinearLayout
+		android:layout_alignParentBottom="true"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="40dp">
+
+		<Button
+			android:id="@+id/save"
+			android:text="保存"
+			android:textSize="20sp"
+			android:textColor="@color/white"
+			android:background="@color/colorPrimary"
+			android:layout_weight="1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+
+		<Button
+			android:id="@+id/reset"
+			android:text="重置"
+			android:textSize="20sp"
+			android:textColor="@color/white"
+			android:background="@color/colorPrimary"
+			android:layout_weight="1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+
+	</LinearLayout>
+
+
+</RelativeLayout>

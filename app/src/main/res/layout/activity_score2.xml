@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical"
+			  android:background="@color/backgroud_color"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+
+	<include
+		android:id="@+id/common_actionbar"
+		layout="@layout/include_actionbar"/>
+
+	<Button
+		android:text="计算"
+		style="@style/next_btn_style"
+		android:id="@+id/calculate"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginBottom="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+	<TextView
+		android:id="@+id/tv_age"
+		android:layout_below="@id/common_actionbar"
+		android:text="年龄(age)"
+		android:textColor="@color/green_title"
+		android:background="@color/white"
+		style="@style/texview_style"
+		android:layout_marginLeft="0dp"
+		android:paddingLeft="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/text_view_height"/>
+	<TextView
+		android:id="@+id/sco1"
+		android:layout_below="@id/tv_age"
+		android:text="ScoreI 得分 (Syntax Score I)"
+		android:textColor="@color/green_title"
+		android:background="@color/white"
+		style="@style/texview_style"
+		android:layout_marginLeft="0dp"
+		android:paddingLeft="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/text_view_height"/>
+
+	<RelativeLayout
+		android:layout_below="@id/sco1"
+		android:layout_marginTop="@dimen/marginTop_dimens"
+		android:id="@+id/lin1"
+		android:background="@color/white"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<EditText
+			android:id="@+id/edt_1"
+			android:layout_marginLeft="10dp"
+			android:inputType="number"
+			android:background="@null"
+			android:hint="肌酐清除率 CrCl（0-135）"
+			android:textSize="@dimen/textsize"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"/>
+		<!--<ImageView
+			android:id="@+id/img1"
+			android:src="@drawable/pulldown_bule"
+			android:layout_centerVertical="true"
+			android:layout_alignParentEnd="true"
+			android:layout_width="60dp"
+			android:layout_height="30dp"/>-->
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_below="@id/lin1"
+		android:layout_marginTop="1dp"
+		android:id="@+id/lin2"
+		android:background="@color/white"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<EditText
+			android:inputType="number"
+			android:id="@+id/edt_2"
+			android:layout_marginLeft="10dp"
+			android:background="@null"
+			android:textSize="@dimen/textsize"
+			android:hint="左心室射血分数 LVEF（10-75)"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"/>
+
+	</RelativeLayout>
+
+	<ListView
+		android:layout_below="@id/lin2"
+		android:id="@+id/listview2"
+		android:background="@color/white"
+		android:layout_marginTop="@dimen/marginTop_dimens"
+		android:divider="@drawable/divider"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+	</ListView>
+
+	<!--<RelativeLayout-->
+		<!--android:id="@+id/r_dialog"-->
+		<!--android:layout_below="@id/listview2"-->
+		<!--android:layout_marginTop="20dp"-->
+		<!--android:layout_width="match_parent"-->
+		<!--android:background="@color/white"-->
+		<!--android:layout_height="wrap_content">-->
+		<!--<TextView-->
+			<!--android:id="@+id/dialog"-->
+			<!--android:text="请选择性别 :"-->
+			<!--android:layout_centerVertical="true"-->
+			<!--android:gravity="center"-->
+			<!--android:textSize="20sp"-->
+			<!--android:layout_marginLeft="10dp"-->
+			<!--android:layout_width="wrap_content"-->
+			<!--android:layout_height="45dp"/>-->
+
+		<!--<TextView-->
+			<!--android:id="@+id/gender"-->
+			<!--android:textSize="20sp"-->
+			<!--android:layout_centerVertical="true"-->
+			<!--android:layout_alignParentRight="true"-->
+			<!--android:layout_marginRight="15dp"-->
+			<!--android:layout_width="wrap_content"-->
+			<!--android:layout_height="wrap_content"/>-->
+	<!--</RelativeLayout>-->
+
+
+</RelativeLayout>

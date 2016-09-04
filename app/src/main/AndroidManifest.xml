@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.sean.score"
+		  xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<uses-permission android:name="android.permission.INTERNET"/>
+
+	<!-- 在SDCard中创建与删除文件权限 -->
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+	<!-- 往SDCard写入数据权限 -->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<!-- 从SDCard读取数据权限 -->
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+	<uses-permission android:name="android.permission.CAMERA"/>
+
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+	<!--  发送消息-->
+	<uses-permission android:name="android.permission.SEND_SMS"/>
+	<!--  阅读消息-->
+	<uses-permission android:name="android.permission.READ_SMS"/>
+	<!--  写入消息-->
+	<uses-permission android:name="android.permission.WRITE_SMS" />
+	<!-- 接收消息 -->
+	<uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+	<application
+		android:name=".CustomApplcation"
+		android:allowBackup="true"
+		android:icon="@mipmap/label"
+		android:label="@string/app_name"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme">
+
+		<meta-data android:name="DATABASE" android:value="wh_example.db" />
+		<meta-data android:name="VERSION" android:value="11" />
+		<meta-data android:name="QUERY_LOG" android:value="true" />
+		<meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="entity" />
+
+		<activity android:name=".MainActivity">
+
+		</activity>
+
+		<activity android:name="ui.CheckActivity">
+
+		</activity>
+		<activity android:name="ui.ChoseImg">
+		</activity>
+		<activity android:name="ui.CloudActivity">
+
+		</activity>
+
+		<activity android:name="ui.EuroScore" android:launchMode="singleTask">
+		</activity>
+		<activity android:name="ui.Eval">
+		</activity>
+		<activity android:name="ui.EvalQuestion">
+		</activity>
+		<activity android:name="ui.FanKui">
+		</activity>
+		<activity android:name="ui.History">
+		</activity>
+		<activity android:name="ui.ImgShow">
+		</activity>
+		<activity android:name="ui.NersScore" android:launchMode="singleTask">
+		</activity>
+		<!-- 程序入口类-->
+		<activity android:name="ui.NewMain">
+			<!--<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>-->
+		</activity>
+		<activity android:name="ui.PhotoviewActivity">
+
+		</activity>
+		<activity android:name="ui.Register">
+
+		</activity>
+		<activity android:name="ui.Renzheng">
+
+		</activity>
+		<activity android:name="ui.Report" android:launchMode="singleTask">
+		</activity>
+		<activity android:name="ui.ResultShow" >
+		</activity>
+		<activity android:name="ui.ScoreI" android:launchMode="singleTask">
+		</activity>
+		<activity android:name="ui.ScoreI2" android:launchMode="singleTask"
+				  android:windowSoftInputMode="adjustPan|stateHidden">
+		</activity>
+		<activity android:name="ui.ScoreII" android:launchMode="singleTask">
+		</activity>
+		<activity android:name="ui.SplashActivity"
+					  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+					  android:noHistory="true"
+					  android:configChanges="orientation|keyboardHidden"
+					  android:label="@string/app_name">
+				<intent-filter>
+					<action android:name="android.intent.action.MAIN" />
+					<category android:name="android.intent.category.LAUNCHER" />
+				</intent-filter>
+
+		</activity>
+		<activity android:name="ui.StartDialog"
+				  android:theme="@style/StartDialog"
+				  android:windowSoftInputMode="adjustPan|stateHidden">
+		</activity>
+
+
+	</application>
+
+</manifest>

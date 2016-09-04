@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<include
+		android:id="@+id/common_actionbar"
+		layout="@layout/include_actionbar"/>
+
+	<TextView
+		android:id="@+id/tv_score"
+		android:background="@color/white"
+		android:text="score: 0.0"
+		android:textColor="#2383c0"
+		android:textSize="@dimen/textsize"
+		android:gravity="center"
+		android:layout_width="wrap_content"
+		android:layout_height="@dimen/text_view_height"
+		android:layout_alignBottom="@+id/common_actionbar"
+		android:layout_marginBottom="2dp"
+		android:layout_alignParentEnd="true"
+		android:layout_marginRight="5dp"/>
+
+	<TextView
+		android:layout_below="@id/common_actionbar"
+		style="@style/texview_style"
+		android:background="@color/green_title"
+		android:textColor="@color/white"
+		android:id="@+id/mytitle"
+		android:layout_width="match_parent"
+		android:text="弥漫/小血管病变\nDiffusely diseased and narrowed segment"
+		android:layout_height="@dimen/text_view_height"/>
+
+	<Button
+		android:id="@+id/ccc_btn"
+		android:text="完成"
+		android:layout_alignParentBottom="true"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:layout_marginLeft="45dp"
+		android:layout_marginRight="45dp"
+		android:layout_marginBottom="10dp"
+		style="@style/next_btn_style"/>
+
+	<ListView
+		android:id="@+id/mlistview"
+		android:layout_below="@id/mytitle"
+		android:divider="@drawable/divider"
+		android:background="@color/white"
+		android:layout_above="@id/ccc_btn"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+	<!--<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:id="@+id/check_lin"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+		</LinearLayout>
+	</ScrollView>-->
+
+</RelativeLayout>

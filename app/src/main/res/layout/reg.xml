@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+		android:background="@color/backgroud_color">
+	<include
+		android:id="@+id/common_actionbar"
+		layout="@layout/include_actionbar"/>
+
+	<EditText
+		android:layout_below="@id/common_actionbar"
+		android:layout_marginTop="20dp"
+		style="@style/edt_reg_style"
+		android:id="@+id/usr_name"
+		android:hint="医生姓名"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/text_view_height"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		/>
+
+	<EditText
+		android:layout_below="@id/usr_name"
+		android:layout_marginTop="20dp"
+		android:id="@+id/hospital"
+		android:hint="所属医院"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/text_view_height"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		style="@style/edt_reg_style"/>
+	<EditText
+		android:layout_below="@id/hospital"
+		android:layout_marginTop="20dp"
+		android:id="@+id/room"
+		android:hint="所属科室"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/text_view_height"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		style="@style/edt_reg_style"/>
+	<EditText
+		android:layout_below="@id/room"
+		android:layout_marginTop="20dp"
+		android:id="@+id/role"
+		android:hint="职称"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/text_view_height"
+		style="@style/edt_reg_style"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"/>
+
+	<EditText
+		android:layout_below="@id/role"
+		android:layout_marginTop="20dp"
+		android:id="@+id/uname_edt"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/text_view_height"
+		android:hint="请输入用户名/手机号"
+		style="@style/edt_reg_style"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		/>
+
+	<EditText
+		android:layout_marginTop="20dp"
+		android:layout_below="@id/uname_edt"
+		style="@style/edt_reg_style"
+		android:id="@+id/yanzheng"
+		android:hint="填写验证"
+		android:layout_width="150dp"
+		android:layout_height="@dimen/text_view_height"
+		android:layout_alignStart="@id/uname_edt"/>
+
+	<Button
+		android:id="@+id/get_btn"
+		android:text="获取验证信息"
+		android:padding="5dp"
+		style="@style/next_btn_style"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/yanzheng"
+		android:layout_alignEnd="@+id/uname_edt"/>
+
+	<Button
+		android:id="@+id/reg_btn"
+		android:text="注册"
+		style="@style/next_btn_style"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginBottom="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		/>
+
+
+</RelativeLayout>
